@@ -16,3 +16,9 @@ test-artifacts/
 training-data/
 private-corpus/
 predictions*.jsonl
+
+.vercel/
+.dev.vars*
+.wrangler/
+node_modules/
+deployment-private/

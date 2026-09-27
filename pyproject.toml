@@ -1,0 +1,11 @@
+[project]
+name = "putian-oldtownvoice"
+version = "0.3.0"
+requires-python = ">=3.12"
+dependencies = ["aiohttp==3.13.3", "fastapi==0.128.2", "uvicorn[standard]==0.48.0"]
+
+[tool.vercel]
+entrypoint = "cloud_app:app"
+
+[project.optional-dependencies]
+test = ["httpx==0.28.1"]

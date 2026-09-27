@@ -1,0 +1,12 @@
+name = "putian-oldtownvoice-entry"
+main = "worker.mjs"
+compatibility_date = "2026-09-27"
+workers_dev = true
+
+[vars]
+# Replace with the REAL production URL returned by Vercel, without a path.
+UPSTREAM_ORIGIN = "https://replace-with-your-project.vercel.app"
+
+# A workers.dev domain is NOT guaranteed accessible from mainland China.
+# For your own Cloudflare-managed domain, add a Custom Domain in the dashboard.
+# Do not place DASHSCOPE_API_KEY here. It belongs only to the Vercel backend.

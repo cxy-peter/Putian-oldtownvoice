@@ -5,3 +5,8 @@
 !store.py
 !public/
 !public/**
+
+deployment-private/
+.vercel/
+.dev.vars*
+.wrangler/
