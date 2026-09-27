@@ -117,7 +117,7 @@ def configure():
 if __name__ == "__main__":
     try:
         configure()
-    except (ValueError, OSError, csv.Error if False else ValueError) as e:
+    except (ValueError, OSError) as e:
         # Keep the message credential-free.
         print("配置未完成:", str(e))
         sys.exit(1)
