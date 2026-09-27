@@ -1,0 +1,3 @@
+# Optional local short-phrase acoustic retrieval. All other workbench features
+# use the host project's existing dependencies.
+numpy>=1.26,<3

@@ -1,0 +1,62 @@
+{
+  "checked_on": "2026-09-27",
+  "live_audio_downloads": 0,
+  "sources": [
+    {
+      "id": "edialect_backend",
+      "url": "https://github.com/e-dialect/hinghwa-dict-backend",
+      "useful_for": "词条/录音关联源码；另有 POST /pronunciation/translate 以音查字模板匹配实现",
+      "verification": "生产数据与在线API未取得",
+      "rights_note": "数据不自动适用代码AGPL"
+    },
+    {
+      "id": "edialect_semantic",
+      "url": "https://github.com/e-dialect/hinghwa_semantic_retrieval",
+      "useful_for": "文字/IPA/拼音检索代码",
+      "verification": "不是音频转普通话API",
+      "rights_note": "代码与数据分别核对"
+    },
+    {
+      "id": "edialect_tts",
+      "url": "https://github.com/e-dialect/ipa_tts_minimal",
+      "useful_for": "espeak-ng发音生成包装",
+      "verification": "不是莆仙识别模型",
+      "rights_note": "合成音频不能冒充真人测试数据"
+    },
+    {
+      "id": "hinghua_factory",
+      "url": "https://github.com/Yaryou/HinghuaFactory/blob/master/Pouleng.dict.yaml",
+      "useful_for": "公开字词-拼音表",
+      "verification": "抽取5条未审核格式样例，无音频",
+      "rights_note": "root MPL-2.0，上游纸本数据范围未核实"
+    },
+    {
+      "id": "puxianhua",
+      "url": "https://puxianhua.com/",
+      "useful_for": "拼音查询与来源线索",
+      "verification": "原站提示未完全校对",
+      "rights_note": "不自动作训练授权"
+    },
+    {
+      "id": "dictionary",
+      "url": "https://www.ptu.edu.cn/zxdh/info/1165/1661.htm",
+      "useful_for": "词典编纂与莆仙语保录音线索",
+      "verification": "书名核实，未获取书内数据或音频",
+      "rights_note": "需核实具体电子数据和录音许可"
+    },
+    {
+      "id": "language_archive",
+      "url": "https://zhongguoyuyan.cn/",
+      "useful_for": "国家语言资源采录展示平台",
+      "verification": "教育部说明确认平台，未登录获取语料",
+      "rights_note": "申请具体数据用途"
+    },
+    {
+      "id": "tieba",
+      "url": "https://tieba.baidu.com/",
+      "useful_for": "待探索的社区注音/释义/音视频线索",
+      "verification": "本次未取得完整目标帖/配套音频",
+      "rights_note": "遵守访问规则与内容许可"
+    }
+  ]
+}

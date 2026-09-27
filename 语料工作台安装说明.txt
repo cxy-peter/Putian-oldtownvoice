@@ -1,0 +1,15 @@
+把本包内 corpus_lab 文件夹、install_corpus.py、安装语料工作台.bat 复制到你现有 app.py 同一层。
+先关闭旧服务，运行：
+
+python install_corpus.py
+python -m pip install -r corpus_lab/requirements.txt
+python app.py
+
+浏览器打开：http://localhost:8787/corpus
+访问码沿用原 APP_ACCESS_CODE；不用 setup.py，不换密钥。
+Cloudflare：关闭单独启动的 app.py 后，运行原 python scripts/share_local.py；网址后加 /corpus。
+
+实际内置：5 条公开字词编码参考、0 条真人录音。不是整个 e-dialect 数据库，不代表模型已学会莆仙话。
+目录中的录音由你补录、回听和审核，勾选检索许可后才进入本机候选检索。保存不等于微调。
+查词、音义配对保存和导入无需调用付费模型；点击原音直译并同意才向百炼发送音频。
+详细用法和测试范围见 docs/CORPUS_WORKBENCH.md。
