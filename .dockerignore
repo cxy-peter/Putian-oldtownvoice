@@ -1,0 +1,7 @@
+**
+!requirements.txt
+!app.py
+!engine.py
+!store.py
+!public/
+!public/**
