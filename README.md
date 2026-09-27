@@ -56,10 +56,18 @@ python scripts/deploy_vercel.py --csv "你的百炼导出.csv"
 
 ## 原本地版本
 
+把阿里云百炼导出的 CSV 放在仓库根目录（文件名可以带空格、中文或 `(1)`），然后运行：
+
 ```bash
 python -m pip install -r requirements.txt
-python scripts/setup.py "你的百炼导出.csv"
+python scripts/setup.py
 python app.py
+```
+
+`setup.py` 会自动识别百炼两列导出格式中的 `apiKey`、`workspaceId` 和 `apiHost`。如果根目录有多个可用 CSV，会让你选择；也仍支持显式路径：
+
+```bash
+python scripts/setup.py "任意文件名.csv"
 ```
 
 打开 `http://localhost:8787`。已有 `.env` 时保留旧配置；不要在公网直接暴露无访问控制服务。容器部署另见 [国内服务器方案](docs/DEPLOY_CN.md)。
